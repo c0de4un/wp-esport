@@ -37,3 +37,4 @@ db/
 /wp/src/wp-trackback.php
 /wp/src/xmlrpc.php
 /wp/src/wp-admin
+/wp/src/wp-cli.phar
