@@ -32,3 +32,39 @@ if (!function_exists('hello_esports')) {
 }
 
 add_action( 'admin_notices', 'hello_esports' );
+
+if (!function_exists('renderESportStats')) {
+    function renderESportStats($atts)
+    {
+        return 'ESport Statistics';
+    }
+}
+add_action('esports_stats', 'renderESportStats');
+
+if (!function_exists('init_esports')) {
+    function init_esports()
+    {
+    }
+}
+
+add_action('init', 'init_esports');
+
+if (!function_exists('handleESportsActivated')) {
+    function handleESportsActivated(string $plugin)
+    {
+        if ($plugin !== 'esports') {
+            return;
+        }
+    }
+}
+add_action('activated_plugin', 'handleESportsActivated');
+
+if (!function_exists('handleESportsDeactivated')) {
+    function handleESportsDeactivated(string $plugin)
+    {
+        if ($plugin !== 'esports') {
+            return;
+        }
+    }
+}
+add_action('deactivated_plugin', 'handleESportsDeactivated');
