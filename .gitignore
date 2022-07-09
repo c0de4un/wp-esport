@@ -38,3 +38,4 @@ db/
 /wp/src/xmlrpc.php
 /wp/src/wp-admin
 /wp/src/wp-cli.phar
+/Credentials.txt
